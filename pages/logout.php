@@ -1,0 +1,12 @@
+<?php
+session_start();
+
+// Supprimer toutes les variables de session
+$_SESSION = [];
+
+// Détruire la session
+session_destroy();
+
+// Rediriger vers la landing page (adapte le chemin si nécessaire)
+header('Location: /boardgamehub/pages/landing.php');
+exit;
